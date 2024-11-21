@@ -1,0 +1,2228 @@
+{
+	"info": {
+		"_postman_id": "8b83107c-2506-4902-83cf-8cbe71dd0739",
+		"name": "Bootcamp 57",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10598703"
+	},
+	"item": [
+		{
+			"name": "Microservicio01",
+			"item": [
+				{
+					"name": "Find all Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/customers/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Empty",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						},
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n        \"customerType\": \"PERSONAL\",\n        \"firstName\": \"Edward Joseph\",\n        \"lastName\": \"valladares Tavera\",\n        \"documentIdentity\": {\n            \"number\": \"76466285\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": true\n        },\n        \"contact\": {\n            \"email\": \"Evalladarestav@gmail.com\",\n            \"address\": {\n                \"type\": \"Domicilio\",\n                \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\n                \"number\": 1,\n                \"province\": \"Lima\",\n                \"district\": \"Villa el Salvador\",\n                \"department\": \"Lima\"\n            },\n            \"phone\": \"940811595\"\n        },\n        \"dateBirth\": \"1995-06-08T15:30:00.000+00:00\",\n        \"sex\": \"M\",\n        \"active\": true\n    },\n    {\n        \"id\": \"aa8044e5-fbf9-45d6-adc8-1aa31c273d63\",\n        \"customerType\": \"PERSONAL\",\n        \"firstName\": \"Maria Fernanda\",\n        \"lastName\": \"Gómez Pérez\",\n        \"documentIdentity\": {\n            \"number\": \"45678912\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": true\n        },\n        \"contact\": {\n            \"email\": \"mariagomez@gmail.com\",\n            \"address\": {\n                \"type\": \"Domicilio\",\n                \"name\": \"Av. Los Olivos 123\",\n                \"number\": 2,\n                \"province\": \"Lima\",\n                \"district\": \"San Borja\",\n                \"department\": \"Lima\"\n            },\n            \"phone\": \"987654321\"\n        },\n        \"dateBirth\": \"1988-11-22T10:15:00.000+00:00\",\n        \"sex\": \"F\",\n        \"active\": true\n    },\n    {\n        \"id\": \"d701315f-7fab-4d81-82e3-3a6fba292cc2\",\n        \"customerType\": \"BUSINESS\",\n        \"firstName\": \"Carlos Alberto\",\n        \"lastName\": \"Ramírez Torres\",\n        \"documentIdentity\": {\n            \"number\": \"87456123\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": true\n        },\n        \"contact\": {\n            \"email\": \"carlos.ramirez@empresa.com\",\n            \"address\": {\n                \"type\": \"Oficina\",\n                \"name\": \"Av. Arequipa 564\",\n                \"number\": 3,\n                \"province\": \"Lima\",\n                \"district\": \"Miraflores\",\n                \"department\": \"Lima\"\n            },\n            \"phone\": \"923456789\"\n        },\n        \"dateBirth\": \"1985-02-14T08:45:00.000+00:00\",\n        \"sex\": \"M\",\n        \"active\": true\n    },\n    {\n        \"id\": \"02f437f0-42d9-41f6-aab6-5e0ed3655f64\",\n        \"customerType\": \"PERSONAL\",\n        \"firstName\": \"Luis Enrique\",\n        \"lastName\": \"Salazar Ruiz\",\n        \"documentIdentity\": {\n            \"number\": \"65789432\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": true\n        },\n        \"contact\": {\n            \"email\": \"luis.salazar@gmail.com\",\n            \"address\": {\n                \"type\": \"Domicilio\",\n                \"name\": \"Calle Las Magnolias 321\",\n                \"number\": 4,\n                \"province\": \"Cusco\",\n                \"district\": \"Wanchaq\",\n                \"department\": \"Cusco\"\n            },\n            \"phone\": \"912345678\"\n        },\n        \"dateBirth\": \"1990-09-12T14:20:00.000+00:00\",\n        \"sex\": \"M\",\n        \"active\": true\n    },\n    {\n        \"id\": \"2f779604-7f3d-4e56-b7a2-cba33b0d5710\",\n        \"customerType\": \"BUSINESS\",\n        \"firstName\": \"Ana Patricia\",\n        \"lastName\": \"Vargas López\",\n        \"documentIdentity\": {\n            \"number\": \"12345678\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": true\n        },\n        \"contact\": {\n            \"email\": \"ana.vargas@empresa.com\",\n            \"address\": {\n                \"type\": \"Oficina\",\n                \"name\": \"Jr. Las Palmeras 987\",\n                \"number\": 5,\n                \"province\": \"Arequipa\",\n                \"district\": \"Yanahuara\",\n                \"department\": \"Arequipa\"\n            },\n            \"phone\": \"934567890\"\n        },\n        \"dateBirth\": \"1982-07-07T09:00:00.000+00:00\",\n        \"sex\": \"F\",\n        \"active\": true\n    },\n    {\n        \"id\": \"14b1769f-de13-4af3-9611-e64c7b4394fa\",\n        \"customerType\": \"PERSONAL\",\n        \"firstName\": \"Pedro Juan\",\n        \"lastName\": \"Martínez Vega\",\n        \"documentIdentity\": {\n            \"number\": \"34567891\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": true\n        },\n        \"contact\": {\n            \"email\": \"pedro.martinez@gmail.com\",\n            \"address\": {\n                \"type\": \"Domicilio\",\n                \"name\": \"Calle Los Cedros 654\",\n                \"number\": 6,\n                \"province\": \"Chiclayo\",\n                \"district\": \"José Leonardo Ortiz\",\n                \"department\": \"Lambayeque\"\n            },\n            \"phone\": \"945678123\"\n        },\n        \"dateBirth\": \"1998-03-18T17:40:00.000+00:00\",\n        \"sex\": \"M\",\n        \"active\": true\n    },\n    {\n        \"id\": \"67f12bca-16d3-4610-8562-2918f8b096eb\",\n        \"customerType\": \"BUSINESS\",\n        \"firstName\": \"Lucía Andrea\",\n        \"lastName\": \"Rojas Pérez\",\n        \"documentIdentity\": {\n            \"number\": \"56789012\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": true\n        },\n        \"contact\": {\n            \"email\": \"lucia.rojas@empresa.com\",\n            \"address\": {\n                \"type\": \"Oficina\",\n                \"name\": \"Av. Primavera 321\",\n                \"number\": 7,\n                \"province\": \"Lima\",\n                \"district\": \"Surco\",\n                \"department\": \"Lima\"\n            },\n            \"phone\": \"978654321\"\n        },\n        \"dateBirth\": \"1992-05-05T11:50:00.000+00:00\",\n        \"sex\": \"F\",\n        \"active\": true\n    },\n    {\n        \"id\": \"3b7e40b0-52bb-4250-bbd2-fcb8c933bc46\",\n        \"customerType\": \"PERSONAL\",\n        \"firstName\": \"Jorge Luis\",\n        \"lastName\": \"Ortega Silva\",\n        \"documentIdentity\": {\n            \"number\": \"67890123\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": true\n        },\n        \"contact\": {\n            \"email\": \"jorge.ortega@gmail.com\",\n            \"address\": {\n                \"type\": \"Domicilio\",\n                \"name\": \"Pasaje Los Rosales 789\",\n                \"number\": 8,\n                \"province\": \"Piura\",\n                \"district\": \"Catacaos\",\n                \"department\": \"Piura\"\n            },\n            \"phone\": \"956789123\"\n        },\n        \"dateBirth\": \"1987-10-10T20:30:00.000+00:00\",\n        \"sex\": \"M\",\n        \"active\": true\n    },\n    {\n        \"id\": \"647d3a98-7483-45c1-a83d-c3cd08ee61bf\",\n        \"customerType\": \"BUSINESS\",\n        \"firstName\": \"Gabriela Isabel\",\n        \"lastName\": \"Fernández Torres\",\n        \"documentIdentity\": {\n            \"number\": \"78901234\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": true\n        },\n        \"contact\": {\n            \"email\": \"gabriela.fernandez@empresa.com\",\n            \"address\": {\n                \"type\": \"Oficina\",\n                \"name\": \"Jr. La Merced 654\",\n                \"number\": 9,\n                \"province\": \"Huancayo\",\n                \"district\": \"El Tambo\",\n                \"department\": \"Junín\"\n            },\n            \"phone\": \"964123789\"\n        },\n        \"dateBirth\": \"1996-04-25T12:10:00.000+00:00\",\n        \"sex\": \"F\",\n        \"active\": true\n    },\n    {\n        \"id\": \"181473b8-f64f-479e-ae4f-bb6c804de70f\",\n        \"customerType\": \"PERSONAL\",\n        \"firstName\": \"Ricardo Javier\",\n        \"lastName\": \"Cáceres Blanco\",\n        \"documentIdentity\": {\n            \"number\": \"89012345\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": true\n        },\n        \"contact\": {\n            \"email\": \"ricardo.caceres@gmail.com\",\n            \"address\": {\n                \"type\": \"Domicilio\",\n                \"name\": \"Av. San Martín 123\",\n                \"number\": 10,\n                \"province\": \"Lima\",\n                \"district\": \"Barranco\",\n                \"department\": \"Lima\"\n            },\n            \"phone\": \"956321478\"\n        },\n        \"dateBirth\": \"1991-08-19T15:20:00.000+00:00\",\n        \"sex\": \"M\",\n        \"active\": true\n    },\n    {\n        \"id\": \"01b34306-632c-46f4-b1d3-b76265714732\",\n        \"customerType\": \"BUSINESS\",\n        \"firstName\": \"Rosa María\",\n        \"lastName\": \"Castillo Cruz\",\n        \"documentIdentity\": {\n            \"number\": \"90123456\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": true\n        },\n        \"contact\": {\n            \"email\": \"rosa.castillo@empresa.com\",\n            \"address\": {\n                \"type\": \"Oficina\",\n                \"name\": \"Av. Los Héroes 987\",\n                \"number\": 11,\n                \"province\": \"Lima\",\n                \"district\": \"San Juan de Miraflores\",\n                \"department\": \"Lima\"\n            },\n            \"phone\": \"987456321\"\n        },\n        \"dateBirth\": \"1984-12-30T18:00:00.000+00:00\",\n        \"sex\": \"F\",\n        \"active\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Find Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/customers/9b2c8908-0a53-4500-93ae-7f792a9d14fc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"9b2c8908-0a53-4500-93ae-7f792a9d14fc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/4ccd104e-6ef5-4e44-a042-c47b5ff22fd1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"4ccd104e-6ef5-4e44-a042-c47b5ff22fd1"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorMessage\": \"Operación no completada\",\n    \"errorCode\": \"404\"\n}"
+						},
+						{
+							"name": "200 Find Customer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/9b2c8908-0a53-4500-93ae-7f792a9d14fc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"9b2c8908-0a53-4500-93ae-7f792a9d14fc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1221"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"customerType\": \"BUSINESS\",\n    \"customerSubType\": \"REGULAR\",\n    \"firstName\": \"Edward Joseph\",\n    \"lastName\": \"valladares Tavera\",\n    \"documentIdentity\": {\n        \"number\": \"76466285\",\n        \"typeDocumentIdentity\": \"DNI\",\n        \"active\": true\n    },\n    \"contact\": {\n        \"email\": \"Evalladarestav@gmail.com\",\n        \"address\": {\n            \"type\": \"Domicilio\",\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\n            \"number\": 1,\n            \"province\": \"Lima\",\n            \"district\": \"Villa el Salvador\",\n            \"department\": \"Lima\"\n        },\n        \"phone\": \"940811595\"\n    },\n    \"dateBirth\": \"1995-06-08\",\n    \"sex\": \"M\",\n    \"accountDto\": [\n        {\n            \"id\": \"bcef433c-3f80-41db-99cd-76e95d2ca9ab\",\n            \"accountNumber\": \"-7476678065331259954\",\n            \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n            \"accountType\": \"CURRENT\",\n            \"currency\": \"Soles\",\n            \"amountAvailable\": 70,\n            \"active\": true\n        },\n        {\n            \"id\": \"49eb0542-c28e-45c7-bc4b-b05847fd668c\",\n            \"accountNumber\": \"5070624052836109658\",\n            \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n            \"accountType\": \"CURRENT\",\n            \"currency\": \"Soles\",\n            \"amountAvailable\": 0,\n            \"active\": true\n        }\n    ],\n    \"creditDto\": [\n        {\n            \"id\": \"e13ad1cd-8dcc-4538-ae41-15c7071e1dd3\",\n            \"creditNumber\": \"-8350752166043616839\",\n            \"customerId\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n            \"creditType\": \"PERSONAL\",\n            \"currency\": \"SOLES\",\n            \"creditLimit\": 10000,\n            \"amountAvailable\": 9900,\n            \"business\": false,\n            \"active\": true\n        }\n    ],\n    \"active\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerType\": \"BUSINESS\",\r\n    \"firstName\": \"Edward Joseph\",\r\n    \"lastName\": \"valladares Tavera\",\r\n    \"documentIdentity\": {\r\n        \"id\": \"1\",\r\n        \"number\": \"76466285\",\r\n        \"typeDocumentIdentity\": \"DNI\",\r\n        \"active\": true\r\n    },\r\n    \"contact\": {\r\n        \"email\": \"Evalladarestav@gmail.com\",\r\n        \"address\": {\r\n            \"type\": \"Domicilio\",\r\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\r\n            \"number\": 1,\r\n            \"department\": \"Lima\",\r\n            \"province\": \"Lima\",\r\n            \"district\": \"Villa el Salvador\"\r\n            \r\n        },\r\n        \"phone\": \"940811595\"\r\n    },\r\n    \"dateBirth\":\"1995-06-08T15:30:00.000Z\",\r\n    \"sex\":\"M\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/customers/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerType\": \"BUSINESS\",\r\n    \"firstName\": \"Edward Joseph\",\r\n    \"lastName\": \"valladares Tavera\",\r\n    \"documentIdentity\": {\r\n        \"id\": \"1\",\r\n        \"number\": \"76466285\",\r\n        \"typeDocumentIdentity\": \"DNI\",\r\n        \"active\": true\r\n    },\r\n    \"contact\": {\r\n        \"email\": \"Evalladarestav@gmail.com\",\r\n        \"address\": {\r\n            \"type\": \"Domicilio\",\r\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\r\n            \"number\": 1,\r\n            \"department\": \"Lima\",\r\n            \"province\": \"Lima\",\r\n            \"district\": \"Villa el Salvador\"\r\n            \r\n        },\r\n        \"phone\": \"940811595\"\r\n    },\r\n    \"dateBirth\":\"1995-06-08T15:30:00.000Z\",\r\n    \"sex\":\"M\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "504"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"895752f2-ffda-4948-99e3-ae19bd46cbaa\",\n    \"customerType\": \"BUSINESS\",\n    \"firstName\": \"Edward Joseph\",\n    \"lastName\": \"valladares Tavera\",\n    \"documentIdentity\": {\n        \"number\": \"76466285\",\n        \"typeDocumentIdentity\": \"DNI\",\n        \"active\": true\n    },\n    \"contact\": {\n        \"email\": \"Evalladarestav@gmail.com\",\n        \"address\": {\n            \"type\": \"Domicilio\",\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\n            \"number\": 1,\n            \"province\": \"Lima\",\n            \"district\": \"Villa el Salvador\",\n            \"department\": \"Lima\"\n        },\n        \"phone\": \"940811595\"\n    },\n    \"dateBirth\": \"1995-06-08T15:30:00.000+00:00\",\n    \"sex\": \"M\",\n    \"active\": true\n}"
+						},
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerType\": \"BUSINESS\",\r\n    \"firstName\": \"Edward Joseph\",\r\n    \"lastName\": \"valladares Tavera\",\r\n    \"documentIdentity\": {\r\n        \"id\": \"1\",\r\n        \"number\": \"76466285\",\r\n        \"typeDocumentIdentity\": \"DNI\",\r\n        \"active\": true\r\n    },\r\n    \"contact\": {\r\n        \"email\": \"Evalladarestav@gmail.com\",\r\n        \"address\": {\r\n            \"type\": \"Domicilio\",\r\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\r\n            \"number\": 1,\r\n            \"department\": \"Lima\",\r\n            \"province\": \"Lima\",\r\n            \"district\": \"Villa el Salvador\"\r\n            \r\n        },\r\n        \"phone\": \"940811595\"\r\n    },\r\n    \"dateBirth\":\"1995-06-08T15:30:00.000Z\",\r\n    \"sex\":\"M\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										""
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorMessage\": \"The customer was not created\",\n    \"errorCode\": \"404\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerType\": \"BUSINESS\",\r\n    \"firstName\": \"Edward Joseph\",\r\n    \"lastName\": \"valladares Tavera\",\r\n    \"documentIdentity\": {\r\n        \"number\": \"76466285\",\r\n        \"typeDocumentIdentity\": \"DNI\",\r\n        \"active\": true\r\n    },\r\n    \"contact\": {\r\n        \"email\": \"Evalladarestav@gmail.com\",\r\n        \"address\": {\r\n            \"type\": \"Domicilio\",\r\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\r\n            \"number\": 1,\r\n            \"province\": \"Lima\",\r\n            \"district\": \"Villa el Salvador\",\r\n            \"department\": \"Lima\"\r\n        },\r\n        \"phone\": \"940811595\"\r\n    },\r\n    \"dateBirth\": \"1995-06-08T15:30:00.000+00:00\",\r\n    \"sex\": \"M\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/customers/9b2c8908-0a53-4500-93ae-7f792a9d14fc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"9b2c8908-0a53-4500-93ae-7f792a9d14fc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 ok",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerType\": \"BUSINESS\",\r\n    \"firstName\": \"Edward Joseph\",\r\n    \"lastName\": \"valladares Tavera\",\r\n    \"documentIdentity\": {\r\n        \"number\": \"76466285\",\r\n        \"typeDocumentIdentity\": \"DNI\",\r\n        \"active\": true\r\n    },\r\n    \"contact\": {\r\n        \"email\": \"Evalladarestav@gmail.com\",\r\n        \"address\": {\r\n            \"type\": \"Domicilio\",\r\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\r\n            \"number\": 1,\r\n            \"province\": \"Lima\",\r\n            \"district\": \"Villa el Salvador\",\r\n            \"department\": \"Lima\"\r\n        },\r\n        \"phone\": \"940811595\"\r\n    },\r\n    \"dateBirth\": \"1995-06-08T15:30:00.000+00:00\",\r\n    \"sex\": \"M\",\r\n    \"active\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/5d2906d2-2da1-48a5-a21a-f155f203a2f8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"5d2906d2-2da1-48a5-a21a-f155f203a2f8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "504"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5d2906d2-2da1-48a5-a21a-f155f203a2f8\",\n    \"customerType\": \"BUSINESS\",\n    \"firstName\": \"Edward Joseph\",\n    \"lastName\": \"valladares Tavera\",\n    \"documentIdentity\": {\n        \"number\": \"76466285\",\n        \"typeDocumentIdentity\": \"DNI\",\n        \"active\": true\n    },\n    \"contact\": {\n        \"email\": \"Evalladarestav@gmail.com\",\n        \"address\": {\n            \"type\": \"Domicilio\",\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\n            \"number\": 1,\n            \"province\": \"Lima\",\n            \"district\": \"Villa el Salvador\",\n            \"department\": \"Lima\"\n        },\n        \"phone\": \"940811595\"\n    },\n    \"dateBirth\": \"1995-06-08T15:30:00.000+00:00\",\n    \"sex\": \"M\",\n    \"active\": true\n}"
+						},
+						{
+							"name": "400 Not Found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerType\": \"BUSINESS\",\r\n    \"firstName\": \"Edward Joseph\",\r\n    \"lastName\": \"valladares Tavera\",\r\n    \"documentIdentity\": {\r\n        \"number\": \"76466285\",\r\n        \"typeDocumentIdentity\": \"DNI\",\r\n        \"active\": true\r\n    },\r\n    \"contact\": {\r\n        \"email\": \"Evalladarestav@gmail.com\",\r\n        \"address\": {\r\n            \"type\": \"Domicilio\",\r\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\r\n            \"number\": 1,\r\n            \"province\": \"Lima\",\r\n            \"district\": \"Villa el Salvador\",\r\n            \"department\": \"Lima\"\r\n        },\r\n        \"phone\": \"940811595\"\r\n    },\r\n    \"dateBirth\": \"1995-06-08T15:30:00.000+00:00\",\r\n    \"sex\": \"M\",\r\n    \"active\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/5d2906d2-2da1-48a5-a21a-f155f203a2f4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"5d2906d2-2da1-48a5-a21a-f155f203a2f4"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorMessage\": \"The customer was not update\",\n    \"errorCode\": \"404\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Customer Parcial",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"firstName\": \"Edwards Joseph\",\r\n    \"lastName\": \"valladares Tavera\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/customers/9b2c8908-0a53-4500-93ae-7f792a9d14fc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"9b2c8908-0a53-4500-93ae-7f792a9d14fc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 ok",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"firstName\": \"Edward Joseph\",\r\n    \"lastName\": \"valladares Tavera\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/5d2906d2-2da1-48a5-a21a-f155f203a2f8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"5d2906d2-2da1-48a5-a21a-f155f203a2f8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "509"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5d2906d2-2da1-48a5-a21a-f155f203a2f8\",\n    \"customerType\": \"BUSINESS\",\n    \"firstName\": \"Edward Joseph\",\n    \"lastName\": \"valladares Tavera\",\n    \"documentIdentity\": {\n        \"number\": \"76466285\",\n        \"typeDocumentIdentity\": \"DNI\",\n        \"active\": true\n    },\n    \"contact\": {\n        \"email\": \"Evalladarestav@gmail.com\",\n        \"address\": {\n            \"type\": \"Domicilio\",\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\n            \"number\": 1,\n            \"province\": \"Lima\",\n            \"district\": \"Villa el Salvador\",\n            \"department\": \"Lima\"\n        },\n        \"phone\": \"940811595\"\n    },\n    \"dateBirth\": \"1995-06-08T15:30:00.000+00:00\",\n    \"sex\": \"\\u0000\",\n    \"active\": true\n}"
+						},
+						{
+							"name": "404 Not found",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"firstName\": \"Edward Joseph\",\r\n    \"lastName\": \"valladares Tavera\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/5d2906d2-2da1-48a5-a21a-f155f203a2f0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"5d2906d2-2da1-48a5-a21a-f155f203a2f0"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorMessage\": \"The customer was not update\",\n    \"errorCode\": \"404\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Customer logic",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/customers/9b2c8908-0a53-4500-93ae-7f792a9d14fc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"9b2c8908-0a53-4500-93ae-7f792a9d14fc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 ok",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/5d2906d2-2da1-48a5-a21a-f155f203a2f8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"5d2906d2-2da1-48a5-a21a-f155f203a2f8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "510"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5d2906d2-2da1-48a5-a21a-f155f203a2f8\",\n    \"customerType\": \"BUSINESS\",\n    \"firstName\": \"Edward Joseph\",\n    \"lastName\": \"valladares Tavera\",\n    \"documentIdentity\": {\n        \"number\": \"76466285\",\n        \"typeDocumentIdentity\": \"DNI\",\n        \"active\": true\n    },\n    \"contact\": {\n        \"email\": \"Evalladarestav@gmail.com\",\n        \"address\": {\n            \"type\": \"Domicilio\",\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\n            \"number\": 1,\n            \"province\": \"Lima\",\n            \"district\": \"Villa el Salvador\",\n            \"department\": \"Lima\"\n        },\n        \"phone\": \"940811595\"\n    },\n    \"dateBirth\": \"1995-06-08T15:30:00.000+00:00\",\n    \"sex\": \"\\u0000\",\n    \"active\": false\n}"
+						},
+						{
+							"name": "404 Not found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/5d2906d2-2da1-48a5-a21a-f155f203a2f0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"5d2906d2-2da1-48a5-a21a-f155f203a2f0"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorMessage\": \"The customer was not deleted\",\n    \"errorCode\": \"404\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Microservicio02",
+			"item": [
+				{
+					"name": "Find all Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/v1/accounts/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Account empty",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						}
+					]
+				},
+				{
+					"name": "Find Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/v1/accounts/18254c88-e337-47b5-b103-01665a7d9cfa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"18254c88-e337-47b5-b103-01665a7d9cfa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Find Account",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cdc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cdc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "322"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5fda30b7-b97d-4f54-bd15-2e5201a69cdc\",\n    \"accountNumber\": \"282519233889786007\",\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"accountType\": \"FIXED_TERM\",\n    \"currency\": \"Soles\",\n    \"amountAvailable\": 0,\n    \"transactionLimit\": null,\n    \"commissionRate\": null,\n    \"active\": true,\n    \"dateAllowedTransaction\": 16,\n    \"holders\": [],\n    \"authorizedSigners\": []\n}"
+						},
+						{
+							"name": "400 Find Account",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cd6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cd6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Find Account By CustomerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/v1/accounts/customer/9b2c8908-0a53-4500-93ae-7f792a9d14fc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"customer",
+								"9b2c8908-0a53-4500-93ae-7f792a9d14fc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Find Account By Customer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/customer/9b2c8908-0a53-4500-93ae-7f792a9d14fc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"customer",
+										"9b2c8908-0a53-4500-93ae-7f792a9d14fc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"bcef433c-3f80-41db-99cd-76e95d2ca9ab\",\n        \"accountNumber\": \"-7476678065331259954\",\n        \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n        \"accountType\": \"CURRENT\",\n        \"currency\": \"Soles\",\n        \"amountAvailable\": 70,\n        \"transactionLimit\": null,\n        \"commissionRate\": 10,\n        \"active\": true,\n        \"dateAllowedTransaction\": null,\n        \"holders\": [],\n        \"authorizedSigners\": []\n    },\n    {\n        \"id\": \"49eb0542-c28e-45c7-bc4b-b05847fd668c\",\n        \"accountNumber\": \"5070624052836109658\",\n        \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n        \"accountType\": \"CURRENT\",\n        \"currency\": \"Soles\",\n        \"amountAvailable\": 0,\n        \"transactionLimit\": null,\n        \"commissionRate\": 10,\n        \"active\": true,\n        \"dateAllowedTransaction\": null,\n        \"holders\": [\n            \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\"\n        ],\n        \"authorizedSigners\": []\n    },\n    {\n        \"id\": \"dacd0d92-ea55-4a12-9a6c-1780754300a4\",\n        \"accountNumber\": \"8940694030438924560\",\n        \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n        \"accountType\": \"CURRENT\",\n        \"currency\": \"Soles\",\n        \"amountAvailable\": 0,\n        \"transactionLimit\": null,\n        \"commissionRate\": 10,\n        \"active\": false,\n        \"dateAllowedTransaction\": null,\n        \"holders\": [\n            \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\"\n        ],\n        \"authorizedSigners\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"CURRENT\", // SAVING - CURRENT - FIXED_TERM\r\n    //\"transactionLimit\":5,\r\n    //\"dateAllowedTransaction\":16\r\n    \"commissionRate\":10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/accounts/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Create account SAVING",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"SAVING\",\r\n    \"transactionLimit\":5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "289"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"e07dcb7f-a75b-471f-8621-508029d8acd4\",\n    \"accountNumber\": \"-5497813452612450981\",\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"accountType\": \"SAVING\",\n    \"currency\": \"Soles\",\n    \"amountAvailable\": 0,\n    \"transactionLimit\": 5,\n    \"commissionRate\": null,\n    \"active\": true,\n    \"holders\": [],\n    \"authorizedSigners\": []\n}"
+						},
+						{
+							"name": "200 Create Account CURRENT",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"CURRENT\", // SAVING - CURRENT - FIXED_TERM\r\n    //\"transactionLimit\":5,\r\n    \"commissionRate\":10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "292"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"28715e11-f849-4ca1-abba-8d0aa5715cd1\",\n    \"accountNumber\": \"1809105730793621042\",\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"accountType\": \"CURRENT\",\n    \"currency\": \"Soles\",\n    \"amountAvailable\": 0,\n    \"transactionLimit\": null,\n    \"commissionRate\": 10,\n    \"active\": true,\n    \"holders\": [],\n    \"authorizedSigners\": []\n}"
+						},
+						{
+							"name": "200 Create account FIXED_TERM",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"FIXED_TERM\", // SAVING - CURRENT - FIXED_TERM\r\n    //\"transactionLimit\":5,\r\n    //\"commissionRate\":10\r\n    \"dateAllowedTransaction\":16\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "322"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5fda30b7-b97d-4f54-bd15-2e5201a69cdc\",\n    \"accountNumber\": \"282519233889786007\",\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"accountType\": \"FIXED_TERM\",\n    \"currency\": \"Soles\",\n    \"amountAvailable\": 0,\n    \"transactionLimit\": null,\n    \"commissionRate\": null,\n    \"active\": true,\n    \"dateAllowedTransaction\": 16,\n    \"holders\": [],\n    \"authorizedSigners\": []\n}"
+						},
+						{
+							"name": "400 Create Account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"FIXED_TERM\", // SAVING - CURRENT - FIXED_TERM\r\n    //\"transactionLimit\":5,\r\n    //\"commissionRate\":10\r\n    \"dateAllowedTransaction\":16\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										""
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorMessage\": \"The client already has an account of this type\",\n    \"errorCode\": \"404\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"282519233889786007\",\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"FIXED_TERM\",\r\n    \"currency\": \"Soles\",\r\n    \"amountAvailable\": 0,\r\n    \"transactionLimit\": null,\r\n    \"commissionRate\": null,\r\n    \"active\": true,\r\n    \"dateAllowedTransaction\": 14,\r\n    \"holders\": [],\r\n    \"authorizedSigners\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/accounts/18254c88-e337-47b5-b103-01665a7d9cfa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"18254c88-e337-47b5-b103-01665a7d9cfa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Edit Customer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"282519233889786007\",\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"FIXED_TERM\",\r\n    \"currency\": \"Soles\",\r\n    \"amountAvailable\": 0,\r\n    \"transactionLimit\": null,\r\n    \"commissionRate\": null,\r\n    \"active\": true,\r\n    \"dateAllowedTransaction\": 14,\r\n    \"holders\": [],\r\n    \"authorizedSigners\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cdc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cdc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "322"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5fda30b7-b97d-4f54-bd15-2e5201a69cdc\",\n    \"accountNumber\": \"282519233889786007\",\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"accountType\": \"FIXED_TERM\",\n    \"currency\": \"Soles\",\n    \"amountAvailable\": 0,\n    \"transactionLimit\": null,\n    \"commissionRate\": null,\n    \"active\": true,\n    \"dateAllowedTransaction\": 14,\n    \"holders\": [],\n    \"authorizedSigners\": []\n}"
+						},
+						{
+							"name": "400 Edit Customer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"282519233889786007\",\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"FIXED_TERM\",\r\n    \"currency\": \"Soles\",\r\n    \"amountAvailable\": 0,\r\n    \"transactionLimit\": null,\r\n    \"commissionRate\": null,\r\n    \"active\": true,\r\n    \"dateAllowedTransaction\": 14,\r\n    \"holders\": [],\r\n    \"authorizedSigners\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cd6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cd6"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "63"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorMessage\": \"The account was not update\",\n    \"errorCode\": \"404\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Account Parcial",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateAllowedTransaction\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/accounts/18254c88-e337-47b5-b103-01665a7d9cfa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"18254c88-e337-47b5-b103-01665a7d9cfa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Edit Account Parcial",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dateAllowedTransaction\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cdc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cdc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "322"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5fda30b7-b97d-4f54-bd15-2e5201a69cdc\",\n    \"accountNumber\": \"282519233889786007\",\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"accountType\": \"FIXED_TERM\",\n    \"currency\": \"Soles\",\n    \"amountAvailable\": 0,\n    \"transactionLimit\": null,\n    \"commissionRate\": null,\n    \"active\": true,\n    \"dateAllowedTransaction\": 20,\n    \"holders\": [],\n    \"authorizedSigners\": []\n}"
+						},
+						{
+							"name": "400 Edit Account Parcial",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dateAllowedTransaction\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cd6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cd6"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "63"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorMessage\": \"The account was not update\",\n    \"errorCode\": \"404\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Account logic",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/v1/accounts/18254c88-e337-47b5-b103-01665a7d9cfa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"18254c88-e337-47b5-b103-01665a7d9cfa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Delete Account logic",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cdc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cdc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "322"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5fda30b7-b97d-4f54-bd15-2e5201a69cdc\",\n    \"accountNumber\": \"282519233889786007\",\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"accountType\": \"FIXED_TERM\",\n    \"currency\": \"Soles\",\n    \"amountAvailable\": 0,\n    \"transactionLimit\": null,\n    \"commissionRate\": null,\n    \"active\": true,\n    \"dateAllowedTransaction\": 20,\n    \"holders\": [],\n    \"authorizedSigners\": []\n}"
+						},
+						{
+							"name": "400 Delete Account logic",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cd9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cd9"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "content-length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Microservicio03",
+			"item": [
+				{
+					"name": "Find all Credit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/v1/credits/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"v1",
+								"credits",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Credit empty",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/api/v1/credit/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"api",
+										"v1",
+										"credit",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						}
+					]
+				},
+				{
+					"name": "Find Credit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/v1/credit/18254c88-e337-47b5-b103-01665a7d9cfa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"credit",
+								"18254c88-e337-47b5-b103-01665a7d9cfa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Find Account",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cdc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cdc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "322"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5fda30b7-b97d-4f54-bd15-2e5201a69cdc\",\n    \"accountNumber\": \"282519233889786007\",\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"accountType\": \"FIXED_TERM\",\n    \"currency\": \"Soles\",\n    \"amountAvailable\": 0,\n    \"transactionLimit\": null,\n    \"commissionRate\": null,\n    \"active\": true,\n    \"dateAllowedTransaction\": 16,\n    \"holders\": [],\n    \"authorizedSigners\": []\n}"
+						},
+						{
+							"name": "400 Find Account",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cd6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cd6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Find Credit By CustomerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/v1/credits/customer/9b2c8908-0a53-4500-93ae-7f792a9d14fc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"v1",
+								"credits",
+								"customer",
+								"9b2c8908-0a53-4500-93ae-7f792a9d14fc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Find Account By Customer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/customer/9b2c8908-0a53-4500-93ae-7f792a9d14fc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"customer",
+										"9b2c8908-0a53-4500-93ae-7f792a9d14fc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"bcef433c-3f80-41db-99cd-76e95d2ca9ab\",\n        \"accountNumber\": \"-7476678065331259954\",\n        \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n        \"accountType\": \"CURRENT\",\n        \"currency\": \"Soles\",\n        \"amountAvailable\": 70,\n        \"transactionLimit\": null,\n        \"commissionRate\": 10,\n        \"active\": true,\n        \"dateAllowedTransaction\": null,\n        \"holders\": [],\n        \"authorizedSigners\": []\n    },\n    {\n        \"id\": \"49eb0542-c28e-45c7-bc4b-b05847fd668c\",\n        \"accountNumber\": \"5070624052836109658\",\n        \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n        \"accountType\": \"CURRENT\",\n        \"currency\": \"Soles\",\n        \"amountAvailable\": 0,\n        \"transactionLimit\": null,\n        \"commissionRate\": 10,\n        \"active\": true,\n        \"dateAllowedTransaction\": null,\n        \"holders\": [\n            \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\"\n        ],\n        \"authorizedSigners\": []\n    },\n    {\n        \"id\": \"dacd0d92-ea55-4a12-9a6c-1780754300a4\",\n        \"accountNumber\": \"8940694030438924560\",\n        \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n        \"accountType\": \"CURRENT\",\n        \"currency\": \"Soles\",\n        \"amountAvailable\": 0,\n        \"transactionLimit\": null,\n        \"commissionRate\": 10,\n        \"active\": false,\n        \"dateAllowedTransaction\": null,\n        \"holders\": [\n            \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\"\n        ],\n        \"authorizedSigners\": []\n    }\n]"
+						},
+						{
+							"name": "200 Find Account By CustomerId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/api/v1/credit/customer/9b2c8908-0a53-4500-93ae-7f792a9d14fc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"api",
+										"v1",
+										"credit",
+										"customer",
+										"9b2c8908-0a53-4500-93ae-7f792a9d14fc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"e13ad1cd-8dcc-4538-ae41-15c7071e1dd3\",\n        \"creditNumber\": \"-8350752166043616839\",\n        \"customerId\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n        \"creditType\": \"PERSONAL\",\n        \"currency\": \"SOLES\",\n        \"creditLimit\": 10000,\n        \"amountAvailable\": 10000,\n        \"cardBank\": null,\n        \"business\": false,\n        \"active\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create Credit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerId\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"creditType\": \"CARD_BANK\", // PERSONAL - BUSINESS - CARD_BANK\r\n    \"creditLimit\": 10000,\r\n    \"cardBank\" : {\r\n        \"yearExpire\":\"2025\",\r\n        \"monthExpire\":\"9\",\r\n        \"cvv\":\"458\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/v1/credits/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"v1",
+								"credits",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Create Credit Personal",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerId\": \"aa8044e5-fbf9-45d6-adc8-1aa31c273d63\",\r\n    \"creditType\": \"PERSONAL\", // PERSONAL - BUSINESS - CARD_BANK\r\n    \"creditLimit\": 10000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/api/v1/credit/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"api",
+										"v1",
+										"credit",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "268"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"ced202d6-f27f-4a3f-97f5-554a7e4637a2\",\n    \"creditNumber\": \"6247875978425848515\",\n    \"customerId\": \"aa8044e5-fbf9-45d6-adc8-1aa31c273d63\",\n    \"creditType\": \"PERSONAL\",\n    \"currency\": \"SOLES\",\n    \"creditLimit\": 10000,\n    \"amountAvailable\": 10000,\n    \"cardBank\": null,\n    \"business\": false,\n    \"active\": true\n}"
+						},
+						{
+							"name": "200 Create Credite Business",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerId\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"creditType\": \"BUSINESS\", // PERSONAL - BUSINESS - CARD_BANK\r\n    \"creditLimit\": 10000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/api/v1/credit/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"api",
+										"v1",
+										"credit",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "268"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"6fc39a9b-2128-4612-b5ef-e7d7d1d34a78\",\n    \"creditNumber\": \"-7860273552227927474\",\n    \"customerId\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"creditType\": \"BUSINESS\",\n    \"currency\": \"SOLES\",\n    \"creditLimit\": 10000,\n    \"amountAvailable\": 10000,\n    \"cardBank\": null,\n    \"business\": true,\n    \"active\": true\n}"
+						},
+						{
+							"name": "200 Create Credit CardBank",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerId\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"creditType\": \"CARD_BANK\", // PERSONAL - BUSINESS - CARD_BANK\r\n    \"creditLimit\": 10000,\r\n    \"cardBank\" : {\r\n        \"yearExpire\":\"2025\",\r\n        \"monthExpire\":\"9\",\r\n        \"cvv\":\"458\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/api/v1/credit/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"api",
+										"v1",
+										"credit",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "364"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"8df48e3d-68b7-4497-8760-0e954d32585d\",\n    \"creditNumber\": \"7057320255577700638\",\n    \"customerId\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"creditType\": \"CARD_BANK\",\n    \"currency\": \"SOLES\",\n    \"creditLimit\": 10000,\n    \"amountAvailable\": 10000,\n    \"cardBank\": {\n        \"cardNumber\": \"6478-3698-7381-7380\",\n        \"yearExpire\": \"2025\",\n        \"monthExpire\": \"9\",\n        \"cvv\": \"458\",\n        \"active\": null\n    },\n    \"business\": true,\n    \"active\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"282519233889786007\",\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"FIXED_TERM\",\r\n    \"currency\": \"Soles\",\r\n    \"amountAvailable\": 0,\r\n    \"transactionLimit\": null,\r\n    \"commissionRate\": null,\r\n    \"active\": true,\r\n    \"dateAllowedTransaction\": 14,\r\n    \"holders\": [],\r\n    \"authorizedSigners\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/credits/18254c88-e337-47b5-b103-01665a7d9cfa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"credits",
+								"18254c88-e337-47b5-b103-01665a7d9cfa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Edit Customer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"282519233889786007\",\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"FIXED_TERM\",\r\n    \"currency\": \"Soles\",\r\n    \"amountAvailable\": 0,\r\n    \"transactionLimit\": null,\r\n    \"commissionRate\": null,\r\n    \"active\": true,\r\n    \"dateAllowedTransaction\": 14,\r\n    \"holders\": [],\r\n    \"authorizedSigners\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cdc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cdc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "322"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5fda30b7-b97d-4f54-bd15-2e5201a69cdc\",\n    \"accountNumber\": \"282519233889786007\",\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"accountType\": \"FIXED_TERM\",\n    \"currency\": \"Soles\",\n    \"amountAvailable\": 0,\n    \"transactionLimit\": null,\n    \"commissionRate\": null,\n    \"active\": true,\n    \"dateAllowedTransaction\": 14,\n    \"holders\": [],\n    \"authorizedSigners\": []\n}"
+						},
+						{
+							"name": "400 Edit Customer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"282519233889786007\",\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"FIXED_TERM\",\r\n    \"currency\": \"Soles\",\r\n    \"amountAvailable\": 0,\r\n    \"transactionLimit\": null,\r\n    \"commissionRate\": null,\r\n    \"active\": true,\r\n    \"dateAllowedTransaction\": 14,\r\n    \"holders\": [],\r\n    \"authorizedSigners\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cd6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cd6"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "63"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorMessage\": \"The account was not update\",\n    \"errorCode\": \"404\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Account Parcial",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateAllowedTransaction\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/credits/18254c88-e337-47b5-b103-01665a7d9cfa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"credits",
+								"18254c88-e337-47b5-b103-01665a7d9cfa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Edit Account Parcial",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dateAllowedTransaction\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cdc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cdc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "322"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5fda30b7-b97d-4f54-bd15-2e5201a69cdc\",\n    \"accountNumber\": \"282519233889786007\",\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"accountType\": \"FIXED_TERM\",\n    \"currency\": \"Soles\",\n    \"amountAvailable\": 0,\n    \"transactionLimit\": null,\n    \"commissionRate\": null,\n    \"active\": true,\n    \"dateAllowedTransaction\": 20,\n    \"holders\": [],\n    \"authorizedSigners\": []\n}"
+						},
+						{
+							"name": "400 Edit Account Parcial",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dateAllowedTransaction\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cd6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cd6"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "63"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorMessage\": \"The account was not update\",\n    \"errorCode\": \"404\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Account logic",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/v1/credits/18254c88-e337-47b5-b103-01665a7d9cfa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"credits",
+								"18254c88-e337-47b5-b103-01665a7d9cfa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Delete Account logic",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cdc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cdc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "322"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5fda30b7-b97d-4f54-bd15-2e5201a69cdc\",\n    \"accountNumber\": \"282519233889786007\",\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\n    \"accountType\": \"FIXED_TERM\",\n    \"currency\": \"Soles\",\n    \"amountAvailable\": 0,\n    \"transactionLimit\": null,\n    \"commissionRate\": null,\n    \"active\": true,\n    \"dateAllowedTransaction\": 20,\n    \"holders\": [],\n    \"authorizedSigners\": []\n}"
+						},
+						{
+							"name": "400 Delete Account logic",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/v1/account/5fda30b7-b97d-4f54-bd15-2e5201a69cd9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"account",
+										"5fda30b7-b97d-4f54-bd15-2e5201a69cd9"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "content-length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Microservicio04",
+			"item": [
+				{
+					"name": "Create Transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"creditId\": \"e13ad1cd-8dcc-4538-ae41-15c7071e1dd3\",\r\n    //\"creditId\": \"\",\r\n    \"transactionType\": \"WITHDRAWAL\", // WITHDRAWAL - DEPOSIT - BANK_TRANSFER - INTERBANK_TRANSFER - MAINTENANCE_PAYMENT\r\n    \"amount\": -100\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/v1/transaction/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"v1",
+								"transaction",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
