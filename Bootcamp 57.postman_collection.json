@@ -110,7 +110,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/api/v1/customers/9b2c8908-0a53-4500-93ae-7f792a9d14fc",
+							"raw": "http://localhost:8081/api/v1/customers/1005a110-e593-4b35-ac2e-eb258192d831",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -120,7 +120,7 @@
 								"api",
 								"v1",
 								"customers",
-								"9b2c8908-0a53-4500-93ae-7f792a9d14fc"
+								"1005a110-e593-4b35-ac2e-eb258192d831"
 							]
 						}
 					},
@@ -200,13 +200,74 @@
 					]
 				},
 				{
+					"name": "Find Customer FULL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/customers/1005a110-e593-4b35-ac2e-eb258192d831/full",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"1005a110-e593-4b35-ac2e-eb258192d831",
+								"full"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Find Customer FULL",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/v1/customers/1005a110-e593-4b35-ac2e-eb258192d831/full",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"1005a110-e593-4b35-ac2e-eb258192d831",
+										"full"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1003"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"1005a110-e593-4b35-ac2e-eb258192d831\",\n    \"customerType\": \"PERSONAL\",\n    \"customerSubType\": \"VIP\",\n    \"firstName\": \"Edward Joseph\",\n    \"lastName\": \"valladares Tavera\",\n    \"documentIdentity\": {\n        \"number\": \"76466285\",\n        \"typeDocumentIdentity\": \"DNI\",\n        \"active\": true\n    },\n    \"contact\": {\n        \"email\": \"Evalladarestav@gmail.com\",\n        \"address\": {\n            \"type\": \"Domicilio\",\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\n            \"number\": 1,\n            \"province\": \"Lima\",\n            \"district\": \"Villa el Salvador\",\n            \"department\": \"Lima\"\n        },\n        \"phone\": \"940811595\"\n    },\n    \"dateBirth\": \"1995-06-08\",\n    \"sex\": \"M\",\n    \"accountDto\": [\n        {\n            \"id\": \"a52e1382-7f06-4d22-b1d2-1054cd8e197e\",\n            \"accountNumber\": \"200064422752001494\",\n            \"customer\": \"1005a110-e593-4b35-ac2e-eb258192d831\",\n            \"accountType\": \"SAVING\",\n            \"currency\": \"Soles\",\n            \"amountAvailable\": 100,\n            \"active\": true\n        }\n    ],\n    \"creditDto\": [\n        {\n            \"id\": \"f18c562e-74ed-4e06-859e-bf11bf0acdae\",\n            \"creditNumber\": \"-5313117709769503037\",\n            \"customerId\": \"1005a110-e593-4b35-ac2e-eb258192d831\",\n            \"creditType\": \"CARD_BANK\",\n            \"currency\": \"SOLES\",\n            \"creditLimit\": 10000,\n            \"amountAvailable\": 10000,\n            \"business\": true,\n            \"active\": true\n        }\n    ],\n    \"active\": true\n}"
+						}
+					]
+				},
+				{
 					"name": "Create Customer",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"customerType\": \"BUSINESS\",\r\n    \"firstName\": \"Edward Joseph\",\r\n    \"lastName\": \"valladares Tavera\",\r\n    \"documentIdentity\": {\r\n        \"id\": \"1\",\r\n        \"number\": \"76466285\",\r\n        \"typeDocumentIdentity\": \"DNI\",\r\n        \"active\": true\r\n    },\r\n    \"contact\": {\r\n        \"email\": \"Evalladarestav@gmail.com\",\r\n        \"address\": {\r\n            \"type\": \"Domicilio\",\r\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\r\n            \"number\": 1,\r\n            \"department\": \"Lima\",\r\n            \"province\": \"Lima\",\r\n            \"district\": \"Villa el Salvador\"\r\n            \r\n        },\r\n        \"phone\": \"940811595\"\r\n    },\r\n    \"dateBirth\":\"1995-06-08T15:30:00.000Z\",\r\n    \"sex\":\"M\"\r\n}",
+							"raw": "{\r\n    \"customerType\": \"BUSINESS\",\r\n    \"customerSubType\": \"REGULAR\",\r\n    \"firstName\": \"Edward Joseph\",\r\n    \"lastName\": \"valladares Tavera\",\r\n    \"documentIdentity\": {\r\n        \"id\": \"1\",\r\n        \"number\": \"15852310\",\r\n        \"typeDocumentIdentity\": \"RUC\",\r\n        \"active\": true\r\n    },\r\n    \"contact\": {\r\n        \"email\": \"Evalladarestav@gmail.com\",\r\n        \"address\": {\r\n            \"type\": \"Domicilio\",\r\n            \"name\": \"Sector 3 Grupo 9 Manzana E Lote 13\",\r\n            \"number\": 1,\r\n            \"department\": \"Lima\",\r\n            \"province\": \"Lima\",\r\n            \"district\": \"Villa el Salvador\"\r\n            \r\n        },\r\n        \"phone\": \"940811595\"\r\n    },\r\n    \"dateBirth\":\"1995-06-08T15:30:00.000Z\",\r\n    \"sex\":\"M\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -320,6 +381,37 @@
 							"body": "{\n    \"errorMessage\": \"The customer was not created\",\n    \"errorCode\": \"404\"\n}"
 						}
 					]
+				},
+				{
+					"name": "Validate p2p Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documentIdentity\": {\r\n        \"number\": \"76466285\",\r\n        \"typeDocumentIdentity\": \"DNI\"\r\n    },\r\n    \"contact\": {\r\n        \"email\": \"Evalladarestav@gmail.com\",\r\n        \"phoneNumber\": \"940811595\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/customers/findClientP2p",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"findClientP2p"
+							]
+						}
+					},
+					"response": []
 				},
 				{
 					"name": "Edit Customer",
@@ -450,7 +542,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n     \"firstName\": \"Edwards Joseph\",\r\n    \"lastName\": \"valladares Tavera\"\r\n}",
+							"raw": "{\r\n    \"firstName\": \"Edwards Joseph\",\r\n    \"lastName\": \"valladares Tavera\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -887,7 +979,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"customer\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"accountType\": \"CURRENT\", // SAVING - CURRENT - FIXED_TERM\r\n    //\"transactionLimit\":5,\r\n    //\"dateAllowedTransaction\":16\r\n    \"commissionRate\":10\r\n}",
+							"raw": "{\r\n    \"customer\": \"8868be49-e96d-4aec-aef2-ba638808be2c\",\r\n    \"accountType\": \"SAVING\", // SAVING - CURRENT - FIXED_TERM,\r\n    \"openingAmount\": 300,\r\n    \"transactionLimit\":5\r\n    //\"dailyAverageMonth\":30,\r\n    //\"isDailyAverageMonth\":true\r\n    //\"dateAllowedTransaction\":16\r\n    //\"commissionRate\":10\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1691,7 +1783,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"customerId\": \"9b2c8908-0a53-4500-93ae-7f792a9d14fc\",\r\n    \"creditType\": \"CARD_BANK\", // PERSONAL - BUSINESS - CARD_BANK\r\n    \"creditLimit\": 10000,\r\n    \"cardBank\" : {\r\n        \"yearExpire\":\"2025\",\r\n        \"monthExpire\":\"9\",\r\n        \"cvv\":\"458\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"customerId\": \"1005a110-e593-4b35-ac2e-eb258192d831\",\r\n    \"creditType\": \"CARD_BANK\", // PERSONAL - BUSINESS - CARD_BANK\r\n    \"creditLimit\": 10000,\r\n    \"cardBank\" : {\r\n        \"yearExpire\":\"2025\",\r\n        \"monthExpire\":\"9\",\r\n        \"cvv\":\"458\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2198,7 +2290,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"creditId\": \"e13ad1cd-8dcc-4538-ae41-15c7071e1dd3\",\r\n    //\"creditId\": \"\",\r\n    \"transactionType\": \"WITHDRAWAL\", // WITHDRAWAL - DEPOSIT - BANK_TRANSFER - INTERBANK_TRANSFER - MAINTENANCE_PAYMENT\r\n    \"amount\": -100\r\n  }",
+							"raw": "{\r\n    \"accountId\": \"a52e1382-7f06-4d22-b1d2-1054cd8e197e\",\r\n    \"destinationAccountId\": \"66337a45-8849-49b3-a512-0a441c5fcfd6\",\r\n    //\"creditId\": \"\",\r\n    \"transactionType\": \"BANK_TRANSFER\", // WITHDRAWAL - DEPOSIT - BANK_TRANSFER - INTERBANK_TRANSFER - MAINTENANCE_PAYMENT\r\n    \"amount\": 100\r\n  }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2206,7 +2298,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8084/api/v1/transaction/",
+							"raw": "http://localhost:8084/api/v1/transactions/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2215,12 +2307,94 @@
 							"path": [
 								"api",
 								"v1",
-								"transaction",
+								"transactions",
 								""
 							]
 						}
 					},
 					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wallet",
+			"item": [
+				{
+					"name": "Create Wallet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ammount\": 1000,\r\n    \"clientP2p\": {\r\n        \"documentIdentity\": {\r\n            \"number\": \"76466285\",\r\n            \"typeDocumentIdentity\": \"DNI\"\r\n        },\r\n        \"contact\": {\r\n            \"email\": \"Evalladarestav@gmail.com\",\r\n            \"phoneNumber\": \"940811595\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/v1/wallets/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"v1",
+								"wallets",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Wallet 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ammount\": 1000,\r\n    \"clientP2p\": {\r\n        \"documentIdentity\": {\r\n            \"number\": \"76466285\",\r\n            \"typeDocumentIdentity\": \"DNI\"\r\n        },\r\n        \"contact\": {\r\n            \"email\": \"Evalladarestav@gmail.com\",\r\n            \"phoneNumber\": \"940811595\"\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/v1/wallets/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"v1",
+										"wallets",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "328"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"42dd25e2-7bc9-49a6-b407-3565a6154ed8\",\n    \"customerId\": \"1005a110-e593-4b35-ac2e-eb258192d831\",\n    \"clientP2p\": {\n        \"documentIdentity\": {\n            \"number\": \"76466285\",\n            \"typeDocumentIdentity\": \"DNI\",\n            \"active\": false\n        },\n        \"contact\": {\n            \"email\": \"Evalladarestav@gmail.com\",\n            \"phoneNumber\": \"940811595\",\n            \"imeiNumber\": null\n        }\n    },\n    \"associatedAccountId\": null,\n    \"amount\": null\n}"
+						}
+					]
 				}
 			]
 		}
